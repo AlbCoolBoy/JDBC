@@ -2,18 +2,21 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ResourceBundle;
 
 public class jdbc {
     public static void main(String[] args) {
+        /*使用资源帮顶器，注册驱动和连接更加灵活*/
+        ResourceBundle bundle=ResourceBundle.getBundle("jdbc");
         Connection connection=null;
         Statement statement=null;
         try {
             /*注册驱动*/
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");  //这个操作不设置返回值的原因是只需要这个加载的执行动作
             /*创建连接*/
-            String url = "jdbc:mysql://127.0.0.1:3306/sql_store";
-            String username = "root";
-            String password = "smt020528";
+            String url = bundle.getString("url");
+            String username = bundle.getString("username");
+            String password = bundle.getString("password");
             connection = DriverManager.getConnection(url, username, password);
             //获取数据库对象
             statement = connection.createStatement();   //创建能够操作sql语句的对象
