@@ -1,10 +1,12 @@
+package test_demo;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
 
-public class jdbc {
+public class jdbc_test01 {
     public static void main(String[] args) {
         /*使用资源帮顶器，注册驱动和连接更加灵活*/
         ResourceBundle bundle=ResourceBundle.getBundle("jdbc");
