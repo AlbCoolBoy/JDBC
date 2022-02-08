@@ -7,7 +7,7 @@ import java.sql.*;
 
 public class Pool_Demo2 {
     public static void main(String[] args) {
-        DataSource dataSource = new ComboPooledDataSource();
+        DataSource dataSource = new ComboPooledDataSource("default");
         try {
             Connection connection = dataSource.getConnection();
             Statement statement = null;
