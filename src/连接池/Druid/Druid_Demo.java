@@ -14,10 +14,12 @@ import java.util.Properties;
 
 public class Druid_Demo {
     public static void main(String[] args) throws Exception {
+        //加载配置文件
         Properties properties=new Properties();
         InputStream is=Druid_Demo.class.getClassLoader().getResourceAsStream("druid.properties");
         properties.load(is);
 
+        //获取池连接对象
         DataSource dataSource=DruidDataSourceFactory.createDataSource(properties);
 
         Connection connection=dataSource.getConnection();
@@ -41,24 +43,6 @@ public class Druid_Demo {
             System.out.println(customer_id+'\t'+first_name+'\t'+last_name+'\t'+'\t'+'\t'+'\t'+birth_date+'\t'+phone+'\t'+
                     address+'\t'+city+'\t'+state+'\t'+points);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
