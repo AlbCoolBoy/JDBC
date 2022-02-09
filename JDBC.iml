@@ -37,5 +37,22 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../Java全栈系统学习/JdbcTemplate/JdbcTemplate/lib/commons-logging-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Java全栈系统学习/JdbcTemplate/JdbcTemplate/lib/spring-beans-5.0.0.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Java全栈系统学习/JdbcTemplate/JdbcTemplate/lib/spring-core-5.0.0.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Java全栈系统学习/JdbcTemplate/JdbcTemplate/lib/spring-jdbc-5.0.0.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Java全栈系统学习/JdbcTemplate/JdbcTemplate/lib/spring-tx-5.0.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/../Java全栈系统学习/C3P0连接池/C3P0连接池/doc/apidocs" />
+          <root url="file://$MODULE_DIR$/../Java全栈系统学习/C3P0连接池/C3P0连接池/doc/apidocs-oracle-thin" />
+          <root url="file://$MODULE_DIR$/../Java全栈系统学习/JdbcTemplate/JdbcTemplate/doc/SpringJdbc Doc" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
